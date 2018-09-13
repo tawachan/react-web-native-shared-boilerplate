@@ -1,0 +1,59 @@
+{
+  "extends": ["tslint:recommended", "tslint-react"],
+  "rules": {
+    "no-duplicate-variable": true,
+    "curly": true,
+    "indent": [true, "spaces"],
+    "no-conditional-assignment": true,
+    "no-debugger": true,
+    "no-console": [true, "log", "debug", "info", "time", "timeEnd", "trace"],
+    "no-consecutive-blank-lines": true,
+    "no-eval": true,
+    "no-namespace": false,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": false,
+    "no-shadowed-variable": false,
+    "quotemark": [true, "double", "jsx-double"],
+    "one-line": [
+      true,
+      "check-catch",
+      "check-else",
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "semicolon": true,
+    "switch-default": true,
+    "triple-equals": [true, "allow-null-check"],
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case",
+      "allow-snake-case"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-type",
+      "check-typecast"
+    ],
+    "max-line-length": [true, 170],
+    "max-classes-per-file": [true, 2]
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}
